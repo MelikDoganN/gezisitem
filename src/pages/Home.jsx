@@ -85,7 +85,7 @@ export default function Home() {
       
       {/*<CostaVictoria />*/}
       <TravelCountries />
-      <About />
+      {/*<About />*/}
     </motion.main>
   );
 }

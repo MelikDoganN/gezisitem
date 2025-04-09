@@ -180,4 +180,41 @@
       gap: 1rem;
     }
   }
-  
+
+/*Chose Place*/
+@media (max-width: 768px) {
+  .paket-karti {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .paket-img img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .paket-icerik {
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+  .paket-icerik .card-title {
+    font-size: 1.3rem;
+  }
+
+  .paket-icerik p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .paket-icerik .card-button {
+    margin: 1rem auto;
+  }
+}
+

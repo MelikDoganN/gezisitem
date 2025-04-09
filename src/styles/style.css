@@ -161,9 +161,9 @@ main{
     z-index: 0;
 }
 
-.swiper{
-    height: 100vh;
-}
+.swiper {
+    height: auto !important;
+  }
 
 .slide-container{
     width: 100%;
@@ -359,16 +359,15 @@ form input,select{
     grid-gap: 2rem;
 }
 .lg-img img {
-    height: 450px; /* veya 450px - ne kadar uzun istiyorsan */
-    object-fit: cover;
+    height: 350px;
     width: 100%;
+    object-fit: cover;
     display: block;
   }
 
 .lg-img {
-    position: relative;
-    transition: transform 0.3s ease;
-    border-radius: 10px;
+    max-width: 300px; /* daha dar genişlik */
+    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -557,18 +556,19 @@ form input,select{
 /*---------Top Destination Carousel -----------Close*/
 
 /*---------Video Background Costa -----------Start*/
-#costa-victoria{
-    padding: 6rem 0;
-    position: relative;
-}
+#costa-victoria {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 
 #costa-victoria video{
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 400px;
     object-fit: cover;
-    max-height: 650px;
+    
 
 }
 
@@ -886,3 +886,108 @@ form input,select{
     letter-spacing: 0.5px;
     margin-bottom: 1rem;
   }
+
+
+  /*Chose Place*/
+  .paket-karti {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+  }
+  
+  .paket-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .paket-icerik .price-label {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .paket-icerik .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .paket-icerik p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+
+    /*Chose Place paket*/
+.paket-bolum {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.paket-yazi {
+  flex: 1;
+  min-width: 280px;
+}
+
+.paket-galeri {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+
+.paket-galeri img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* Swiper yön tuşları düzeltmesi */
+
+.slider-wrapper {
+    height: auto;
+  }
+  
+
+
+  .paket-bolum {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  
+  .paket-galeri-swiper {
+    flex: 1 1 400px;
+    max-width: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .paket-yazi {
+    flex: 1 1 400px;
+    max-width: 500px;
+  }
+  

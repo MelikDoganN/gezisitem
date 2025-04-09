@@ -33,9 +33,10 @@ export default function Navbar() {
             <div className="btn">
               <i className="fas fa-times close-btn" onClick={() => setMenuOpen(false)}></i>
             </div>
-            <li><Link to="/aktiviteler" onClick={() => setMenuOpen(false)}>Aktiviteler</Link></li>
-            <li><Link to="/turlar" onClick={() => setMenuOpen(false)}>Turlar</Link></li>
-            <li><Link to="/kampanyalar" onClick={() => setMenuOpen(false)}>Kampanyalar</Link></li>
+            <li><Link to="/anasayfa1" onClick={() => setMenuOpen(false)}>Aktiviteler</Link></li>
+
+            <li><Link to="/hakkimizda" onClick={() => setMenuOpen(false)}>Hakkımızda</Link></li>
+            <li><Link to="/iletisim" onClick={() => setMenuOpen(false)}>İletişim</Link></li>
           </ul>
 
           <div className="btn">

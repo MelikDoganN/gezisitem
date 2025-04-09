@@ -8,8 +8,8 @@ import ScrollToTop from "./components/ScrollToTop"; // ✅ eklendi
 
 import Home from "./pages/Home";
 import Aktiviteler from "./pages/Aktiviteler";
-import Turlar from "./pages/Turlar";
-import Kampanyalar from "./pages/Kampanyalar";
+import Turlar from "./pages/Iletisim";
+import Kampanyalar from "./pages/Hakkimizda";
 
 import Anasayfa1 from "./pages/Anasayfa1";
 import Anasayfa2 from "./pages/Anasayfa2";

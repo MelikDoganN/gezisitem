@@ -4,11 +4,11 @@ import { AnimatePresence } from "framer-motion";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop"; // ✅ eklendi
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
 import Aktiviteler from "./pages/Aktiviteler";
-import Turlar from "./pages/Iletisim";
+import Iletisim from "./pages/Iletisim";
 import Kampanyalar from "./pages/Hakkimizda";
 
 import Anasayfa1 from "./pages/Anasayfa1";
@@ -26,7 +26,7 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/aktiviteler" element={<Aktiviteler />} />
-        <Route path="/turlar" element={<Turlar />} />
+        <Route path="/iletisim" element={<Iletisim />} />
         <Route path="/kampanyalar" element={<Kampanyalar />} />
 
         {/* Anasayfa kartlarına karşılık gelen sayfalar */}
@@ -45,7 +45,7 @@ export default function App() {
   return (
     <Router>
       <Navbar />
-      <ScrollToTop /> {/* ✅ Scroll otomatik en üste */}
+      <ScrollToTop />
       <AnimatedRoutes />
       <Footer />
     </Router>

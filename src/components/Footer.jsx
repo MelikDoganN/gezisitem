@@ -17,10 +17,10 @@ export default function Footer() {
           {/* Orta - Menü */}
           <div className="footer-col">
             <h3>Hızlı Erişim</h3>
-            <a href="#">Aktiviteler</a>
-            <a href="#">Turlar</a>
-            <a href="#">Kampanyalar</a>
-            <a href="#">İletişim</a>
+            <a href="/anasayfa1">Aktiviteler</a>
+
+            <a href="/hakkimizda">Hakkımızda</a>
+            <a href="/iletisim">İletişim</a>
           </div>
 
           {/* Sağ - İletişim */}

@@ -1126,6 +1126,34 @@ form input,select{
       color: #666;
     }
   }
+  @media (max-width: 768px) {
+    .paket-img {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 auto;
+    }
   
+    .paket-img img,
+    .paket-img .swiper {
+      width: 100% !important;
+      height: auto !important;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  
+    .paket-karti {
+      grid-template-columns: 1fr !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .paket-icerik {
+      text-align: center;
+      padding: 0 1rem;
+    }
+  }
+    
   
   
